@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Arduino-wol by teravice</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Arduino-wol</h1>
+        <p>Use arduino to wake in lan any PC </p>
+
+        <p class="view"><a href="https://github.com/teravice/Arduino-WOL">View the Project on GitHub <small>teravice/Arduino-WOL</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/teravice/Arduino-WOL/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/teravice/Arduino-WOL/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/teravice/Arduino-WOL">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="arduino-wol" class="anchor" href="#arduino-wol" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arduino-WOL</h3>
+
+<p>Use arduino to wake in lan any PC in your network.</p>
+
+<p>Wanted to use wake on lan magic packets to wake my PC remotely was the problem.</p>
+
+<p>My ISP, my router and even the Internet wouldn't let me sent magic packets.</p>
+
+<p>So I thought I have an arduino just sitting there. Let's make arduino do it for me.</p>
+
+<p>After a couple of hours this little program came up. In order to get it up and running properly follow the instructions:</p>
+
+<p>1) Edit the MAC address of the shield's Ethernet card( byte mac[] ) 2) Assign the proper gateway address, Arduino's IP address and subnet mask( byte ip[], byte gateway[], byte subnet[] ) 3) Assign the MAC address of the computer we want to wake ( byte remote_MAC_ADD[] ) 4) Assign Arduino a static IP on the router 5) Forward a specific port(e.g 56789) to our Arduino's IP port 23 6) Done!</p>
+
+<p>Now you either have to have a static ip at your home or use a dynamic dns service.</p>
+
+<p>Simply use telnet like this:</p>
+
+<p>e.g. telnet testing.no-ip.org:56789</p>
+
+<p>Once is connected follow the instructions and arduino will wake your pc for you.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/teravice">teravice</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

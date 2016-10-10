@@ -1,0 +1,6 @@
+{
+  "name": "Arduino-wol",
+  "tagline": "Use arduino to wake in lan any PC ",
+  "body": "###Arduino-WOL\r\n\r\nUse arduino to wake in lan any PC in your network.\r\n\r\nWanted to use wake on lan magic packets to wake my PC remotely was the problem.\r\n\r\nMy ISP, my router and even the Internet wouldn't let me sent magic packets.\r\n\r\nSo I thought I have an arduino just sitting there. Let's make arduino do it for me.\r\n\r\nAfter a couple of hours this little program came up. In order to get it up and running properly follow the instructions:\r\n\r\n1) Edit the MAC address of the shield's Ethernet card( byte mac[] ) 2) Assign the proper gateway address, Arduino's IP address and subnet mask( byte ip[], byte gateway[], byte subnet[] ) 3) Assign the MAC address of the computer we want to wake ( byte remote_MAC_ADD[] ) 4) Assign Arduino a static IP on the router 5) Forward a specific port(e.g 56789) to our Arduino's IP port 23 6) Done!\r\n\r\nNow you either have to have a static ip at your home or use a dynamic dns service.\r\n\r\nSimply use telnet like this:\r\n\r\ne.g. telnet testing.no-ip.org:56789\r\n\r\nOnce is connected follow the instructions and arduino will wake your pc for you.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
